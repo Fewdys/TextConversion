@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Reflection.Emit;
 using System.Windows.Forms;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace TextConversion
 {
@@ -533,9 +534,19 @@ namespace TextConversion
                 if (confusables.ContainsKey(c))
                 {
                     var options = confusables[c];
-                    var selected = options[random.Next(options.Count)];
-                    output += selected.Character;
-                    usedConfusables.Add(selected.Name);
+                    if (options.Count > 1)
+                    {
+                        var selected = options[random.Next(1, options.Count)];
+                        output += selected.Character;
+                        usedConfusables.Add(selected.Name);
+                    }
+                    else if (options.Count == 1)
+                    {
+                        // If there’s only one item, select it directly
+                        var selected = options[0];
+                        output += selected.Character;
+                        usedConfusables.Add(selected.Name);
+                    }
                 }
                 else
                 {
