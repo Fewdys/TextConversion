@@ -8,3 +8,6 @@
 *.sqlite
 /.vs
 /obj
+/bin
+/Properties/PublishProfiles
+/TextConversion.csproj.user
