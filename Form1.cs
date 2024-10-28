@@ -30,7 +30,7 @@ namespace TextConversion
             { 'G', new List<(string, string)> { ("G", "Latin 'G'"), ("Ԍ", "Cyrillic 'Ԍ'")} },
             { 'h', new List<(string, string)> { ("h", "Latin 'h'"), ("һ", "Cyrillic 'һ'")} },
             { 'H', new List<(string, string)> { ("H", "Latin 'H'"), ("Н", "Cyrillic 'Н'"), ("Η", "Greek 'Η'")} },
-            { 'i', new List<(string, string)> { ("i", "Latin 'i'"), ("і", "Cyrillic 'і'"), ("ⅰ", "Roman 'ⅰ'") } },
+            { 'i', new List<(string, string)> { ("i", "Latin 'i'"), ("і", "Cyrillic 'і'")} },
             { 'I', new List<(string, string)> { ("I", "Latin 'I'"), ("І", "Cyrillic 'І'"), ("Ι", "Greek 'Ι'") } },
             { 'j', new List<(string, string)> { ("j", "Latin 'j'"), ("ј", "Cyrillic 'ј'")} },
             { 'J', new List<(string, string)> { ("J", "Latin 'J'"), ("Ј", "Cyrillic 'Ј'")} },
