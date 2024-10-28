@@ -374,17 +374,6 @@ namespace TextConversion
             ("\u1DF1", "Combining Right-Handed Tone"),
         };
 
-        private readonly List<Color> colors = new List<Color>
-        {
-            Color.Red,
-            Color.Green,
-            Color.Blue,
-            Color.Yellow,
-            Color.Orange,
-            Color.Purple,
-            Color.Cyan
-        };
-
         private int currentColorIndex = 0;
         private System.Windows.Forms.Timer colorTimer;
         private float hue; // Initialize hue to 0 for red
